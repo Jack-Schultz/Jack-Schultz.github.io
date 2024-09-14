@@ -3,36 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jack Schultz | Programmer CV</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
             background-color: #f4f4f9;
         }
 
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 1rem;
+            padding: 2rem 1rem;
             text-align: center;
         }
 
         nav {
-            text-align: center;
-            margin-top: 20px;
+            background-color: #333;
+            overflow: hidden;
         }
 
         nav a {
-            margin: 0 15px;
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
             text-decoration: none;
-            color: #4CAF50;
-            font-weight: bold;
         }
 
-        section {
+        nav a:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        main {
             padding: 20px;
             max-width: 900px;
             margin: 0 auto;
@@ -40,6 +44,7 @@
 
         h2 {
             color: #4CAF50;
+            margin-top: 2rem;
         }
 
         .projects-list {
@@ -57,12 +62,13 @@
 
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 10px;
             background-color: #333;
             color: white;
-            position: fixed;
+            position: relative;
             bottom: 0;
             width: 100%;
+            margin-top: 2rem;
         }
 
         a {
@@ -71,6 +77,21 @@
 
         a:hover {
             color: #333;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            nav a {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+
+            main {
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -89,63 +110,65 @@
         <a href="#contact">Contact</a>
     </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm Jack Schultz, a student passionate about programming and technology. I've been coding for the past four years and have experience working with various programming languages such as Python, JavaScript, and C. I enjoy building software projects that solve interesting problems and enjoy teaching what I know to other students.</p>
-        <p><strong>High School:</strong> Prince Alfred Collage/p>
-        <p><strong>Hobbies:</strong> Coding, Learning Spanish, Robotics, Networking, Reading, and of course Gaming.</p>
-    </section>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm Jack Schultz, a student passionate about programming and technology. I've been coding for the past four years and have experience working with various programming languages such as Python, JavaScript, and C. I enjoy building software projects that solve interesting problems and teaching what I know to other students.</p>
+            <p><strong>High School:</strong> Prince Alfred College</p>
+            <p><strong>Hobbies:</strong> Coding, Learning Spanish, Robotics, Networking, Reading, and Gaming.</p>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Proficient Languages:</strong> Python, C++</li>
-            <li><strong>Basic Knowledge Languages:</strong> Typescript, Java, C#, HTML & CSS</li>
-            <li><strong>Tools:</strong> Git & GitHub, Jetbrains IDEs, PyGame</li>
-            <li><strong>Technologies:</strong> Databases (SQL, MongoDB)</li>
-        </ul>
-    </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Proficient Languages:</strong> Python, C++</li>
+                <li><strong>Basic Knowledge Languages:</strong> TypeScript, Java, C#, HTML & CSS</li>
+                <li><strong>Tools:</strong> Git & GitHub, JetBrains IDEs, Pygame</li>
+                <li><strong>Technologies:</strong> Databases (SQL, MongoDB)</li>
+            </ul>
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul class="projects-list">
-            <li>
-                <h3>1. Tetris</h3>
-                <p>Created classic Tetris with the ability to hold one piece. Written in Python using the Pygame-ce library.</p>
-                <p><strong>Technologies:</strong> Python, PyGame (Library)</p>
-                <p><a href="#">View on GitHub</a></p>
-            </li>
-            <li>
-                <h3>2. Paper.io Game</h3>
-                <p>A simple in which multiple players battle over control of the background by enclosing areas to fill it with your team's colour. Written in Python using the Pygame-ce library.</p>
-                <p><strong>Technologies:</strong> Python, Tkinter</p>
-                <p><a href="#">View on GitHub</a></p>
-            </li>
-        </ul>
-    </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul class="projects-list">
+                <li>
+                    <h3>1. Tetris</h3>
+                    <p>Created a classic Tetris game with the ability to hold one piece. Written in Python using the Pygame-ce library.</p>
+                    <p><strong>Technologies:</strong> Python, Pygame</p>
+                    <p><a href="https://github.com/Jack-Schultz/Tetris">View on GitHub</a></p>
+                </li>
+                <li>
+                    <h3>2. Paper.io Game</h3>
+                    <p>A simple game in which multiple players battle over control of the background by enclosing areas to fill it with your team's color. Written in Python using the Pygame-ce library.</p>
+                    <p><strong>Technologies:</strong> Python, Pygame</p>
+                    <p><a href="https://github.com/Jack-Schultz/Paper-io">View on GitHub</a></p>
+                </li>
+            </ul>
+        </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>Prince Alfred Collage - International Baccalaureate Diploma Programme Graduate</strong></p>
-        <p><strong>Relevant Courses:</strong>Advanced Mathematics (AA), Physics</p>
-        <p><strong>Certificates:</strong></p>
-        <ul>
-            <li>None</li>
-        </ul>
-    </section>
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>Prince Alfred College - International Baccalaureate Diploma Programme Graduate</strong></p>
+            <p><strong>Relevant Courses:</strong> Advanced Mathematics (AA), Physics</p>
+            <p><strong>Certificates:</strong></p>
+            <ul>
+                <li>None</li>
+            </ul>
+        </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me via the following platforms:</p>
-        <ul>
-            <li><strong>Email:</strong> <a href="mailto:jackaustinschultz@gmail.com">jackaustinschultz@gmail.com</a></li>
-            <li><strong>LinkedIn:</strong> <a href="#">https://www.linkedin.com/in/jack-schultz-576379323/</a></li>
-            <li><strong>GitHub:</strong> <a href="#">https://github.com/Jack-Schultz</a></li>
-        </ul>
-    </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me via the following platforms:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:jackaustinschultz@gmail.com">jackaustinschultz@gmail.com</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jack-schultz-576379323/">linkedin.com/in/jack-schultz-576379323/</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/Jack-Schultz">github.com/Jack-Schultz</a></li>
+            </ul>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Jack Schultz.</p>
+        <p>&copy; 2024 Jack Schultz</p>
     </footer>
 
 </body>

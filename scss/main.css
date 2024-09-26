@@ -64,6 +64,10 @@
   padding-bottom: 20px;
   border: 2px solid #333;
 }
+.wide-list ul {
+  list-style-type: disc;
+  padding: 10px;
+}
 
 .blocks-container {
   display: flex;
